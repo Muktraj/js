@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+     <title>small bigger</title>
+    <script>
+       function check(){
+        var a = Number(document.getElementById('data').value);
+        var b = Number(document.getElementById('data1').value);
+        var c = Number(document.getElementById('data2').value);
+        if(a>b && a>c){
+                     console.log(a)
+                     document.getElementById('answer').value = a;
+               }else if(b>c && b>a){
+                    console.log(b)
+                    document.getElementById('answer').value = b;
+                }else if(c>a && c>b){
+                    console.log(c)
+                    document.getElementById('answer').value = c;
+                }else if(a === b){
+                     console.log(a)
+                     document.getElementById('answer').value = a;
+               }else if(b === c){
+                    console.log(b)
+                    document.getElementById('answer').value = b;
+                }else if(c === a){
+                    console.log(c)
+                    document.getElementById('answer').value = c;
+                }
+
+
+                if(a<b && a<c){
+                     console.log(a)
+                     document.getElementById('sanswer').value = a;
+               }else if(b<c && b<a){
+                    console.log(b)
+                    document.getElementById('sanswer').value = b;
+                }else if(c<a && c<b){
+                    console.log(c)
+                    document.getElementById('sanswer').value = c;
+                }else if(a === b){
+                     console.log(a)
+                     document.getElementById('sanswer').value = a;
+               }else if(b === c){
+                    console.log(b)
+                    document.getElementById('sanswer').value = b;
+                }else if(c === a){
+                    console.log(c)
+                    document.getElementById('sanswer').value = c;
+                }
+          
+       }
+       
+
+       
+    </script>
+    
+</head>
+<body>
+        <div class="container has-background-dark">
+            <div class="section">
+            <input type="text" class="input" id="data" placeholder="Enter The value" style="width: 500px;">
+            <input type="text" class="input" id="data1" placeholder="Enter The Value" style="width: 500px;">
+            <input type="text" class="input" id="data2" placeholder="Enter The Value" style="width: 500px;"><br>
+            <input type="text" class="input" id="answer" placeholder="big answer" style="width: 500px;">
+            <input type="text" class="input" id="sanswer" placeholder="small answer" style="width: 500px;">
+            
+            <button class="button is-primary" onclick="check()">Answer</button>
+            
+        </div>
+        </div>
+</body>
+</html>

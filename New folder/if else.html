@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>If else</title>
+
+<script>
+    function add(){
+        var a = document.getElementById('data').value;
+        var b = document.getElementById('data1').value;
+        var c =parseInt (a) + parseInt (b);
+        var value = Math.sign(c);
+        var value = Math.floor(c);
+        if(c > 0){
+                c =  `Is Positive Number  This answer is =` +c;
+        }
+        else if(c < 0){
+            c = ` Is nagetive Number This answer is` +c;
+        }
+        else if(c == 0){
+            c =` Is Zero Number This answer is` +c;
+        }
+
+        document.getElementById('answer').value = c;
+
+    }
+
+
+    function sub(){
+        var a = document.getElementById('data').value;
+        var b = document.getElementById('data1').value;
+        var c =parseInt (a) - parseInt (b);
+        var value = Math.sign(c);
+        if(c > 0){
+                c =  `Is Positive Number  This answer is =` +c;
+        }
+        else if(c < 0){
+            c = ` Is nagetive Number This answer is` +c;
+        }
+        else if(c == 0){
+            c =` Is Zero Number This answer is` +c;
+        }
+
+        document.getElementById('answer').value = c;
+
+    }
+
+
+    function mul(){
+        var a = document.getElementById('data').value;
+        var b = document.getElementById('data1').value;
+        var c =parseInt (a) * parseInt (b);
+        var value = Math.sign(c);
+        if(c > 0){
+                c =  `Is Positive Number  This answer is =` +c;
+        }
+        else if(c < 0){
+            c = ` Is nagetive Number This answer is` +c;
+        }
+        else if(c == 0){
+            c =` Is Zero Number This answer is` +c;
+        }
+
+        document.getElementById('answer').value = c;
+
+    }
+
+    function div(){
+        var a = document.getElementById('data').value;
+        var b = document.getElementById('data1').value;
+        var c =parseInt (a) / parseInt (b);
+        var value = Math.sign(c);
+        if(c > 0){
+                c =  `Is Positive Number  This answer is =` +c;
+        }
+        else if(c < 0){
+            c = ` Is nagetive Number This answer is` +c;
+        }
+        else if(c == 0){
+            c =` Is Zero Number This answer is  ` +c;
+        }
+
+        document.getElementById('answer').value = c;
+
+    }
+</script>
+
+</head>
+<body>
+    <div class="container has-background-dark">
+        <div class="section">
+    
+        <input class="input" type="text" id="data" placeholder="Enter Value 1" style="width: 500px;">    
+         <input class="input" type="text" id="data1" placeholder="Enter Value 2" style="width: 500px;"><br><br>
+    <button class="button is-primary" onclick="add()">
+        +
+    </button>
+
+    <button class="button is-primary" onclick="sub()" >
+        -
+    </button>
+    <button class="button is-primary" onclick="mul()">
+        *
+    </button>
+
+    <button class="button is-primary" onclick="div()">
+        /
+    </button>
+    <br>
+    <input type="text" class="input" id="answer" placeholder="Answer" style="width: 500px;">
+    
+    <h1 id="res"></h1>
+</div>
+</div>
+</body>
+</html>
